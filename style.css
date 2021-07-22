@@ -1,0 +1,88 @@
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    /*to make the height and width responsive*/
+    width: 40vw;
+    background: url(clock.png) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+    border-radius: 50%;
+
+}
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+   
+}
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    background-color: white;
+    
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    background-color:white;
+   
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    background-color: rgb(219, 7, 7);
+}
+
+.brand {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(230, 252, 39);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(60, 75, 7);
+    text-align: center;
+    position: absolute;
+    top: 72%;
+    left: 46%;
+    opacity: 1000;
+}
+    
+
+@media screen and (max-width:978px) {
+    #clockcontainer {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+    .clock {
+        flex-direction: row;
+    }
+    .brand {
+        padding: 2px;
+        font-size: 10px;
+        left: 42%;
+    }
+    .circle {
+        top: 48%;
+        left: 48%;
+    }
+} 
+
+body{
+    background: #B24592;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
